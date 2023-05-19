@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <script
+    src="https://kit.fontawesome.com/24c494a6b6.js"
+    crossorigin="anonymous">
+    </script>
+
+<style>
+    #container {
+      display: flex;
+      margin-top: 60px;
+    }
+
+    form {
+      width: 10%;
+    }
+</style>
+</head>
+<body>
+
+    <div id="container">
+        <div id="register-form">
+            <h1>Register</h1>
+            <form id="reg_form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="text" id="email" placeholder="Email">
+                <input type="text" id="username" placeholder="Username">
+                <input type="text" id="password" placeholder="Password">
+                <input type="text" id="mobile" placeholder="Mobile">
+                <input type="text" id="description" placeholder="Description">
+            </form>
+
+            <button onclick="Register()">Register</button>
+        </div>
+
+        <div id="navbar">
+            <!-- importing navbar here -->
+        </div>
+
+        <div id="login-form">
+        <h1>Login</h1>
+        <form id="log_form">
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="text" id="login-password" placeholder="Password">
+        </form>
+
+        <button onclick="Login()">Login</button>
+    </div>
+</div>
+</body>
+</html>
+
+<script type="module" src="auth.js"></script>
